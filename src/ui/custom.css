@@ -1,0 +1,256 @@
+#turnkey-credit { display: none; }
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body{
+  background-color: white;
+}
+
+.navbar-brand {
+  max-width: calc(100% - 57px);
+  overflow-x: hidden;
+  margin-right: 0 !important;
+}
+
+#main {
+  margin-top:20px;
+  margin-bottom: 60px; /* Margin bottom by footer height */
+  font-size: 20px !important;
+  text-align: center !important;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  background-color: #3D89E0;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+}
+
+.row {
+  align-items: center;
+  justify-content: center;
+}
+
+.row > * {
+  margin-left: 5px;
+  text-align: center;
+}
+
+.column {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.flexcolumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+fieldset {
+  border: 1px groove gray !important;
+  max-width: 300px;
+  margin: auto;
+}
+
+legend {
+  font-size: inherit !important;
+  text-align: left !important;
+  margin: 0 10px;
+  width: inherit;
+}
+
+.tohide {
+  display: none;
+}
+
+.column > *, .flexcolumn > * {
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.tablewrap {
+  overflow-x: auto;
+}
+
+input {
+  text-align: inherit;
+}
+
+input[type=number] {
+  width: 50px;
+}
+
+.data-lbl{
+  width: 150px;
+  margin-left: 2px;
+}
+
+.data-fld{
+  margin: 2px 0;
+  min-width: 180px;
+  background-color: white;
+}
+
+.hst{
+  cursor: pointer;
+}
+
+.ztop{
+  z-index:100;
+}
+
+.nobul{
+  list-style-type: none;
+}
+
+/* Components for table scrolling */
+.tdiv {
+  position: relative;
+  margin: 0 auto;
+}
+
+.inner {	
+  overflow-x: scroll;
+}
+
+.firstcol {
+  max-width: 200px;
+  width: 200px;
+}
+
+.lateralborder {
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+/* End of scrolling */
+
+/* Log specific entries */
+#list {
+  text-align: right;
+  min-width: 130px;
+  height: 80vh;
+  overflow-y: scroll;
+}
+#txtcont {
+  vertical-align: top;
+  width: 70%;
+  display:inline-block;
+  height: 100%;
+}
+#txt{
+  width: 100%;
+  height: 70vh;
+}
+
+.athletecard {
+  border: 3px solid #3D89E0;
+  background-color: #3D89E0CA;
+  max-width: 500px;
+  padding: 10px;
+  border-radius: 25px;
+  color: white;
+}
+
+.border {
+  border: 3px solid gray;
+  max-width: 500px;
+  padding: 10px;
+  border-radius: 25px;
+}
+
+.textwall{
+	text-align: left;
+	margin: auto;
+	padding: 0 10px 30px 0;
+	max-width: 90%;
+	font-size:17px;
+}
+
+.marginunder {
+  margin-bottom: 10px;
+}
+
+.bg-dark {
+  background-color: #3D89E0 !important;
+}
+
+.vcenter {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: inline; 
+}
+
+.daydiv {
+  display: none;
+}
+
+.primarycolor {
+  color: #007bff;
+}
+
+.infocolor {
+  color: #17a2b8;
+}
+
+.successcolor {
+  color: #28a745;
+}
+
+.warningcolor {
+  color: #ffc107;
+}
+
+.dangercolor {
+  color: #c82333;
+}
+
+.primarybg {
+  background-color: #007bff;
+}
+
+.infobg {
+  background-color: #17a2b8;
+}
+
+.successbg {
+  background-color: #0bfc03;
+}
+
+.warningbg {
+  background-color: #ffc107;
+}
+
+.dangerbg {
+  background-color: #dc3545;
+}
+
+.colorbox {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  left: 5px;
+  top: 5px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color:#fff !important;
+}
+
+.navbar-dark .navbar-toggler {
+  color: rgba(255, 255, 255, 1) !important;
+  border-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
