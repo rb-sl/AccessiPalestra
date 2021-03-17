@@ -11,6 +11,13 @@ if(isset($_SESSION['id']))
     exit;
 }
 
+if(!isset($_POST['user']) or !isset($_POST['psw']));
+{
+    $_SESSION['alert'] = "Inserire le informazioni richieste";
+    header("Location: /user/signup.php");
+    exit;
+}
+
 $stmt = prepare_stmt("INSERT INTO users (username, password, master) VALUES(?, ?, 0)");
 $stmt->bind_param("ss", $_POST['user'], $password);
 $password = md5($_POST['psw']);

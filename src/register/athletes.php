@@ -22,8 +22,8 @@ if($res->num_rows == 0)
 else
     while($row = $res->fetch_assoc())
         echo "<div id='athl".$row['athlete_id']."' class='column marginunder athletecard'>
-            <input type='text' name='name[".$row['athlete_id']."]' value=\"".$row['name']."\" required>
-            <input type='text' name='surname[".$row['athlete_id']."]' class='marginunder' value=\"".$row['surname']."\" required><br>
+            <input type='text' name='name[".$row['athlete_id']."]' value=\"".quoteHTML($row['name'])."\" required>
+            <input type='text' name='surname[".$row['athlete_id']."]' class='marginunder' value=\"".quoteHTML($row['surname'])."\" required><br>
             <button type='button' id='dlt".$row['athlete_id']."' class='btn btn-danger btndel'>Rimuovi</button>
         </div>";
 ?>

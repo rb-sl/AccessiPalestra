@@ -138,7 +138,13 @@ function getWeekdayEN($weekday) {
 // Function to request the confirmation of a client-side action
 function confirm($quest)
 {
-	return "onclick=\"return confirm('$quest');\"";
+	return "onclick=\"return confirm('".addslashes(quoteHTML($quest))."');\"";
+}
+
+// Changes " in &quot; for visualization purposes
+function quoteHTML($str)
+{
+	return str_replace("\"", "&quot;", $str);
 }
 
 // Returns the difference between two given times

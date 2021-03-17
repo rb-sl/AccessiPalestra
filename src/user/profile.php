@@ -15,7 +15,7 @@ $user=$ret->fetch_assoc();
 
 <form method="POST" action="profile_update.php">
 	Nome utente:<br>
-    <input id="user" style="margin-bottom: 5px;" type="text" name="user" value="<?=$user['username']?>"><br>
+    <input id="user" style="margin-bottom: 5px;" type="text" name="user" value="<?=quoteHTML($user['username'])?>"><br>
 
 	<button  style="margin-bottom: 5px;" type="button" id="btnpass" class="btn btn-warning">Modifica password</button><br>
 	<div id="pass" class="column tohide">
